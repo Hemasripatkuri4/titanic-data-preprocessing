@@ -77,7 +77,7 @@ The cleaned dataset is saved as `processed_titanic.csv` and is ready for machine
 
 ## 🔗 Shareable Repo Link
 
-**[Click to view GitHub Repository](https://github.com/sudhatanmai/titanic-data-preprocessing)**
+**[Click to view GitHub Repository](https://github.com/Hemasripatkuri4/titanic-data-preprocessing)**
 
 
 
