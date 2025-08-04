@@ -1,78 +1,85 @@
-🚢 Titanic Dataset - Data Cleaning & Preprocessing
-Task 1 | AI & ML Internship
+# 🚢 Titanic Dataset - Data Preprocessing (Task 1)
 
-📌 Overview
-This task focuses on the essential step of data cleaning and preprocessing using the classic Titanic dataset. This dataset contains information about passengers aboard the Titanic, and the goal is to prepare the data for machine learning models by handling missing values, encoding categorical variables, and normalizing data.
+**Author:** Hemasrilakshmi  
+**Repository:** [GitHub Repo](https://github.com/Hemasripatkuri4/titanic-data-preprocessing)
 
-🎯 Objective
-Clean and preprocess real-world data
+---
 
-Handle missing values effectively
+## 📌 Task Objective
 
-Convert categorical data to numerical format
+The goal of this task is to clean and prepare the Titanic dataset to make it ready for Machine Learning models. The main steps include:
 
-Normalize and scale the data
+- Checking for missing values
+- Filling or removing null data
+- Encoding text data into numbers
+- Normalizing data
+- Identifying and removing outliers
 
-Prepare dataset for further machine learning tasks
+---
 
-📂 Dataset Used
-Name: Titanic Dataset
+## 📁 Files in This Repo
 
-Source: Kaggle Titanic: Machine Learning from Disaster
+| File Name              | Purpose                                            |
+|------------------------|----------------------------------------------------|
+| `Titanic-Dataset.csv`  | Original dataset containing passenger details      |
+| `titanic_preprocessing.py` | Python script to preprocess the dataset             |
+| `processed_titanic.csv`| Final cleaned dataset after processing             |
+| `boxplot_outliers.png` | Boxplot chart to visualize outliers                |
+| `README.md`            | This explanation file                              |
 
-🔧 Key Steps Performed
-Checked for null/missing values
+---
 
-Imputed missing values (Age, Embarked)
+## 🛠 Tools Used
 
-Removed irrelevant columns (e.g., PassengerId, Name, Ticket)
+- Python  
+- Pandas  
+- NumPy  
+- Seaborn  
+- Matplotlib  
+- sklearn (for standard scaling)
 
-Converted categorical columns like Sex, Embarked using Label Encoding / OneHotEncoding
+---
 
-Normalized numerical features like Age and Fare
+## ✅ Steps Followed
 
-Split data into features and labels for model readiness
+1. **Load the data**  
+   Loaded the CSV file and displayed basic information.
 
-🧰 Tools & Libraries
-Python
+2. **Missing Value Handling**  
+   - Filled missing `Age` values using the median.  
+   - Filled missing `Embarked` values using the mode.  
+   - Dropped `Cabin` column because it had too many missing entries.
 
-Pandas
+3. **Categorical Data Handling**  
+   - Converted `Sex` to 0 and 1 (Label Encoding).  
+   - One-hot encoded the `Embarked` column.
 
-NumPy
+4. **Normalization**  
+   - Standardized the `Age` and `Fare` columns.
 
-Matplotlib / Seaborn (for visualization)
+5. **Outlier Detection**  
+   - Plotted boxplots for `Age` and `Fare`.  
+   - Saved the image as `boxplot_outliers.png`.
 
-Scikit-learn (for preprocessing)
+---
 
-📷 Screenshot
+## 📷 Output Example
+
+> ![Outlier Boxplot](boxplot_outliers.png)
+
+---
+
+## 📦 Result
+
+The cleaned dataset is saved as `processed_titanic.csv` and is ready for machine learning use.
+
+---
+
+## 🔗 Shareable Repo Link
+
+**[Click to view GitHub Repository](https://github.com/sudhatanmai/titanic-data-preprocessing)**
 
 
-📁 Files Included
-titanic_cleaning.ipynb – Main notebook
-
-README.md – Project description
-
-screenshot.png – Example of output (optional)
-
-titanic.csv – Dataset (or linked from Kaggle)
-
-🧠 Learnings
-This task helped build a solid foundation in:
-
-Data analysis and cleaning
-
-Identifying and handling missing values
-
-Feature engineering and transformation
-
-Preparing data pipelines for ML models
-
-🔗 Useful Links
-Kaggle Titanic Dataset
-
-Scikit-learn Documentation
-
-Pandas Documentation
 
 
 
